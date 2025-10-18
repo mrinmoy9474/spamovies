@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>My Movies — SPA</title>
+<link rel="stylesheet" href="style.css">
+<!-- Fluid Player CSS (optional skin) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fluid-player@5.0.2/dist/fluidplayer.min.css">
+</head>
+<body>
+<header class="site-header">
+<h1 class="logo">My Movies</h1>
+<div class="search-wrap">
+<input id="searchInput" type="search" placeholder="Search movies or categories..." />
+</div>
+</header>
+
+
+<main class="container">
+<section id="movieGrid" class="grid"></section>
+</main>
+
+
+<!-- Ad template will be inserted between rows by script.js -->
+
+
+<!-- Modal / Player -->
+<div id="playerModal" class="modal hidden">
+<div class="modal-inner">
+<button id="closeModal" class="close">✕</button>
+<div id="playerContainer">
+<!-- Video element injected here by script -->
+</div>
+<div class="player-info">
+<h2 id="playerTitle"></h2>
+<p id="playerDesc"></p>
+</div>
+</div>
+</div>
+
+
+<footer class="site-footer">
+<p>© My Movies • Static SPA • Add movies via <code>movies.js</code></p>
+</footer>
+
+
+<!-- Movie list -->
+<script src="movies.js"></script>
+
+
+<!-- Fluid Player JS -->
+<script src="https://cdn.jsdelivr.net/npm/fluid-player@5.0.2/dist/fluidplayer.min.js"></script>
+
+
+<!-- Main script -->
+<script src="script.js"></script>
+</body>
+</html>
