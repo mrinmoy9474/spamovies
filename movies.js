@@ -26,5 +26,21 @@ const MOVIES = [
     video: 'https://www.w3schools.com/html/mov_bbb.mp4',
     category: 'Comedy',
     description: 'Third sample entry.'
+  },
+  {
+    id: 'm4',
+    title: 'Sample Movie Three',
+    thumbnail: 'https://i.ibb.co/G45Y4BJ7/Screenshot-2025-10-19-141642.png',
+    video: 'https://www.w3schools.com/html/mov_bbb.mp4',
+    category: 'Comedy',
+    description: 'Third sample entry.'
+  },
+  {
+    id: 'm5',
+    title: 'Sample Movie Three',
+    thumbnail: 'https://via.placeholder.com/400x225.png?text=Poster+3',
+    video: 'https://www.w3schools.com/html/mov_bbb.mp4',
+    category: 'Comedy',
+    description: 'Third sample entry.'
   }
 ];
