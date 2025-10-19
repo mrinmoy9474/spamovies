@@ -1,5 +1,5 @@
 // Main logic for SPA rendering, search, modal, and Fluid Player init.
-
+console.log('Movies loaded:', MOVIES);
 
 // Fluid player config
 const config = {
@@ -62,4 +62,5 @@ renderGrid(MOVIES);
 
 
 // Accessibility: keyboard close
+
 window.addEventListener('keydown', (e)=>{ if (e.key==='Escape') closePlayer(); });
