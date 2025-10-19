@@ -5,7 +5,7 @@ const MOVIES = [
   {
     id: 'm1',
     title: 'Sample Movie One',
-    thumbnail: 'https://via.placeholder.com/400x225.png?text=Poster+1',
+    thumbnail: 'https://i.ibb.co/G45Y4BJ7/Screenshot-2025-10-19-141642.png',
     video: 'https://www.w3schools.com/html/mov_bbb.mp4',
     category: 'Drama',
     description: 'A sample movie. Replace with your direct MP4 or M3U8 link.',
