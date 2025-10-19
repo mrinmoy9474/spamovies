@@ -1,63 +1,36 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>My Movies — SPA</title>
-<link rel="stylesheet" href="style.css">
-<!-- Fluid Player CSS (optional skin) -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fluid-player@5.0.2/dist/fluidplayer.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Movie Streaming Site</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<header class="site-header">
-<h1 class="logo">My Movies</h1>
-<div class="search-wrap">
-<input id="searchInput" type="search" placeholder="Search movies or categories..." />
-</div>
-</header>
+  <header>
+    <h1>🎬 My Movie Streaming</h1>
+    <input id="search" type="text" placeholder="Search movies or categories..." />
+  </header>
 
+  <main>
+    <div id="movie-grid" class="grid"></div>
+  </main>
 
-<main class="container">
-<section id="movieGrid" class="grid"></section>
-</main>
+  <!-- Modal for video player -->
+  <div id="movie-modal" class="modal hidden">
+    <div class="modal-content">
+      <span id="close-modal" class="close">&times;</span>
+      <div id="player-container"></div>
+    </div>
+  </div>
 
+  <footer>
+    <p>© 2025 My Movie Streaming • Add movies via <code>movies.js</code></p>
+  </footer>
 
-<!-- Ad template will be inserted between rows by script.js -->
-
-
-<!-- Modal / Player -->
-<div id="playerModal" class="modal hidden">
-<div class="modal-inner">
-<button id="closeModal" class="close">✕</button>
-<div id="playerContainer">
-<!-- Video element injected here by script -->
-</div>
-<div class="player-info">
-<h2 id="playerTitle"></h2>
-<p id="playerDesc"></p>
-</div>
-</div>
-</div>
-
-
-<footer class="site-footer">
-<p>© My Movies • Static SPA • Add movies via <code>movies.js</code></p>
-</footer>
-
-
-<!-- Movie list -->
-<!-- <script src="movies.js"></script> 
-
-
-<!-- Fluid Player JS -->
-<!-- <script src="https://cdn.jsdelivr.net/npm/fluid-player@5.0.2/dist/fluidplayer.min.js"></script>
-
-
-<!-- Main script -->
-<!-- <script src="script.js"></script> -->
-<script src="movies.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/fluid-player@5.0.2/dist/fluidplayer.min.js"></script>
-<script src="script.js"></script>
+  <!-- JS Files -->
+  <script src="movies.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/fluid-player@5.0.2/dist/fluidplayer.min.js"></script>
+  <script src="script.js"></script>
 </body>
-
 </html>
